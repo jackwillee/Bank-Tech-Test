@@ -1,28 +1,14 @@
-# frozen_string_literal: true
-
 class Account
   attr_reader :balance
-
-  def initialize(balance)
- 
+  def initialize
     @balance = 0
-    
   end
 
-  def deposit(amount)
+  def deposit_money(money)
     @balance += money
   end
 
-  def withdraw(amount)
-    @balance -= amount
+  def withdraw_money(money)
+    @balance -= money
   end
-  
-  def print_statement(statement)
-    statement.print(@transactions)
-
-  end 
-  def create_transaction(transaction)
-    @transactions.push(transaction)
-
-  end 
 end
