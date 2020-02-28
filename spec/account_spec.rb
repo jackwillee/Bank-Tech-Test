@@ -17,8 +17,8 @@ describe Account do
     end
   end
   describe '#balance' do
-    context 'When a deposit of 1000 and a deposit of 700 are made' do
-      it 'Returns balance of 1700' do
+    context 'When a deposit of 25000 is made' do
+      it 'Returns balance of 25000' do
         
       subject.deposit_money(25000)
         expect(subject.balance).to eq(25000)
